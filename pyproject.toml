@@ -5,3 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.3",
+]
+
+[tool.ruff]
+line-length = 50
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "tab"
+docstring-code-line-length = 20
